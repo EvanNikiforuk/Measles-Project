@@ -1,9 +1,20 @@
 //Global Variables
+int appWidth, appHeight;
 //
 void setup() {
-  //Display and Orientation (fullscreen)
-  //Population
-  //Theme: i.e Face
+  //Display and Orientation (change to fullscreen later) fullscreen() displayWidth,displayHeight
+  size(800,600);
+  displayOrientation(); //need smaller dimension (ternary operator)
+  appWidth = width;
+  appHeight = height;
+  //
+  population();
+  //Theme: i.e Face (will work in ortriat and landscape)
+  faceSetup();
+  eyes();
+  nose();
+  mouth();
+  measlesDynamic();
   //Background Image with tint()
 } //End setup
 //
