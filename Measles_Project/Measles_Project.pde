@@ -1,5 +1,6 @@
 //Global Variables
 int appWidth, appHeight;
+PImage pic1, pic2;
 //
 void setup() {
   //Display and Orientation (change to fullscreen later) fullscreen() displayWidth,displayHeight
