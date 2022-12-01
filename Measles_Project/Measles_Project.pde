@@ -3,10 +3,13 @@ int appWidth, appHeight;
 float mouthX, mouthY, mouthWidth, mouthHeight;
 float noseX, noseY, noseWidth, noseHeight;
 PImage pic1, pic2;
+int reset=1;
+color resetWhite=#FFFFFF;
+Boolean nightMode=false;
 //
 void setup() {
   //Display and Orientation (change to fullscreen later) fullscreen() displayWidth,displayHeight
-  size(800,600);
+  size(800, 600);
   displayOrientation(); //need smaller dimension (ternary operator)
   appWidth = width;
   appHeight = height;
@@ -17,10 +20,6 @@ void setup() {
   population();
   //Theme: i.e Face (will work in ortriat and landscape)
   faceSetup();
-  eyes();
-  nose();
-  mouth();
-  measlesDynamic();
   //Background Image with tint()
 } //End setup
 //
@@ -28,6 +27,10 @@ void draw() {
   //OS System Start Button
   //Splash Screen Level start button | Measles Reset Button
   //Theme: measles with different sizes and colours
+  measlesDynamic();
+  eyes();
+  nose();
+  mouth();
   //
   //NOSE
   fill(255);
@@ -43,6 +46,13 @@ void draw() {
 //
 void keyPressed() {
   //Keyboard Shortcuts
+  if ( key=='N' | key=='n' ) {
+    if ( nightMode==false ) {
+      nightMode = true;
+    } else {
+      nightMode=false;
+    }
+  }
 } //End keyPressed
 //
 void mousePressed() {

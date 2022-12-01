@@ -3,7 +3,7 @@ float eye2X, eye2Y, eye2Diameter;
 float eye3X, eye3Y, eye3Diameter;
 float eye4X, eye4Y, eye4Diameter;
 void eyes() {
-  fill(255,0,0);
+  fill(0,255,0);
   ellipse(eye1X, eye1Y, eye1Diameter, eye1Diameter);
   ellipse(eye2X, eye2Y, eye2Diameter, eye2Diameter);
   //

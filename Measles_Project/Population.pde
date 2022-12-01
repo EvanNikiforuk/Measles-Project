@@ -3,7 +3,7 @@ void population() {
   float centerX = appWidth * 1/2;
   float centerY = appHeight * 1/2;
   //
-  float smallerDimension;
+  int smallerDimension;
   smallerDimension = ( landscape==true ) ? height : width; //ternary operator
   //
   rectFaceX = centerX - smallerDimension * 1/2;
