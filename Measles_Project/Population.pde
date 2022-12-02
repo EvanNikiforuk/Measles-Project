@@ -15,31 +15,46 @@ void population() {
   faceY = centerY;
   faceDiameter = smallerDimension;
   //
-  eye1X = appWidth * 1.3/4;
+  eye1X = appWidth * 1.5/4;
   eye1Y = appHeight * 0.8/4;
-  eye1Diameter = 125;
+  eye1Diameter = 175;
   //
-  eye3X = appWidth * 1.3/4;
+  eye3X = appWidth * 1.5/4;
   eye3Y = appHeight * 0.8/4;
-  eye3Diameter = 50;
+  eye3Diameter = 75;
   //
-  eye2X = appWidth * 2.7/4;
+  eye2X = appWidth * 2.5/4;
   eye2Y = appHeight * 0.8/4;
-  eye2Diameter = 125;
+  eye2Diameter = 175;
   //
-  eye4X = appWidth * 2.7/4;
+  eye4X = appWidth * 2.5/4;
   eye4Y = appHeight * 0.8/4;
-  eye4Diameter = 50;
+  eye4Diameter = 75;
   //
-  noseX = appWidth * 1.6/4;
-  noseY = appHeight * 1.1/4;
-  noseWidth = appWidth * 2/10;
+  noseX = appWidth * 1.7/4;
+  noseY = appHeight * 1/4;
+  noseWidth = appWidth * 1.5/10;
   noseHeight = appHeight * 3.5/10;
   //
-  mouthX = appWidth * 1/4;
+  mouthX = appWidth * 1.25/4;
   mouthY = appHeight * 2.7/4;
-  mouthWidth = appWidth * 5/10;
-  mouthHeight = appHeight * 1.8/10;
+  mouthWidth = appWidth * 3.8/10;
+  mouthHeight = appHeight * 1.6/10;
+  //
+  measleStartX = appWidth * 0.1/4;
+  measleStartY = appHeight * 0.5/4;
+  measleStartWidth = appWidth * 1.7/10;
+  measleStartHeight = appHeight * 1/10;
+  //
+  measleStopX = appWidth * 0.1/4;
+  measleStopY = appHeight * 1.5/4;
+  measleStopWidth = appWidth * 1.7/10;
+  measleStopHeight = appHeight * 1/10;
+  //
+  measleGoX = appWidth * 0.1/4;
+  measleGoY = appHeight * 2.5/4;
+  measleGoWidth = appWidth * 1.7/10;
+  measleGoHeight = appHeight * 1/10;
   //
   //
 } //End population
