@@ -42,19 +42,24 @@ void population() {
   mouthHeight = appHeight * 1.6/10;
   //
   measleStartX = appWidth * 0.1/4;
-  measleStartY = appHeight * 0.5/4;
+  measleStartY = appHeight * 0.3/4;
   measleStartWidth = appWidth * 1.7/10;
   measleStartHeight = appHeight * 1/10;
   //
   measleStopX = appWidth * 0.1/4;
-  measleStopY = appHeight * 1.5/4;
+  measleStopY = appHeight * 1.3/4;
   measleStopWidth = appWidth * 1.7/10;
   measleStopHeight = appHeight * 1/10;
   //
   measleGoX = appWidth * 0.1/4;
-  measleGoY = appHeight * 2.5/4;
+  measleGoY = appHeight * 2.3/4;
   measleGoWidth = appWidth * 1.7/10;
   measleGoHeight = appHeight * 1/10;
+  //
+  nightX = appWidth * 0.1/4;
+  nightY = appHeight * 3.3/4;
+  nightWidth = appWidth * 1.7/10;
+  nightHeight = appHeight * 1/10;
   //
   //
 } //End population
