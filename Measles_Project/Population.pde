@@ -61,6 +61,11 @@ void population() {
   nightWidth = appWidth * 1.7/10;
   nightHeight = appHeight * 1/10;
   //
+  quitX = appWidth * 3.2/4;
+  quitY = appHeight * 0.1/4;
+  quitWidth = appWidth * 1.85/10;
+  quitHeight = appHeight * 9.5/10;
+  //
   //
 } //End population
 //

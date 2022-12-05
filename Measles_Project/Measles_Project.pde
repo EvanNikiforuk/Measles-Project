@@ -7,12 +7,13 @@ float measleStopX, measleStopY, measleStopWidth, measleStopHeight;
 float measleGoX, measleGoY, measleGoWidth, measleGoHeight;
 PImage pic1, pic2, pic3;
 int reset=1;
-color resetWhite=#FFFFFF, MSB, MSB2, MGB, MNB, red=#FF0000, red2=#710A00;
+color resetWhite=#FFFFFF, MSB, MSB2, MGB, MNB, GB, red=#FF0000, red2=#710A00;
 Boolean nightMode=false, measleStart=false, measleGo=false;
-String MeasleStart = "MEASLE START!", MeasleStop = "MEASLE STOP!", MeasleGo = "MEASLE GO AWAY!", NightMode = "NIGHT MODE!";
+String MeasleStart = "MEASLE START!", MeasleStop = "MEASLE STOP!", MeasleGo = "MEASLE GO AWAY!", NightMode = "NIGHT MODE!", Quit = "EXIT!";
 PFont titleFont;
 //
 void setup() {
+  background( random(0,255));
   //Display and Orientation (change to fullscreen later) fullscreen() displayWidth,displayHeight
   fullScreen();
   displayOrientation(); //need smaller dimension (ternary operator)
@@ -58,8 +59,9 @@ void draw() {
   measleStopButton();
   measleGoButton();
   nightModeButton();
+  quitButton();
   //
-  if ( measleGo ) {
+  if ( measleGo==true ) {
     //measleGoAway();
     //
     background(random(0, 255), random(0, 255), 0);
@@ -92,6 +94,8 @@ void keyPressed() {
       nightMode=false;
     }
   }
+  //
+  if ( key=='Q' || key=='q' ) exit();
 } //End keyPressed
 //
 void mousePressed() {
@@ -114,6 +118,8 @@ void mousePressed() {
       nightMode=false;
     }
   }
+  //
+  if ( mouseX>quitX && mouseX<quitX+quitWidth && mouseY>quitY && mouseY<quitY+quitHeight ) exit();
   //OS System Start Button
   //Splash Screen Start Button
   //Quit Button
