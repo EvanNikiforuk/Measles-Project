@@ -13,7 +13,7 @@ String MeasleStart = "MEASLE START!", MeasleStop = "MEASLE STOP!", MeasleGo = "M
 PFont titleFont;
 //
 void setup() {
-  background( random(0,255));
+  background( random(0,100));
   //Display and Orientation (change to fullscreen later) fullscreen() displayWidth,displayHeight
   fullScreen();
   displayOrientation(); //need smaller dimension (ternary operator)
